@@ -338,6 +338,72 @@
 </section>
 
 
+<style>
+    /* Particle Animation */
+    .particle {
+        position: absolute;
+        background: rgba(255, 255, 255, 0.3);
+        border-radius: 50%;
+        animation: moveParticle 10s infinite ease-in-out;
+    }
+
+    @keyframes moveParticle {
+        0% {
+            transform: translate(0, 0) scale(0.5);
+            opacity: 0.5;
+        }
+        50% {
+            transform: translate(50px, -50px) scale(1);
+            opacity: 1;
+        }
+        100% {
+            transform: translate(-20px, 20px) scale(0.5);
+            opacity: 0.5;
+        }
+    }
+
+    .particle:nth-child(1) { width: 15px; height: 15px; top: 10%; left: 20%; animation-delay: 0s; }
+    .particle:nth-child(2) { width: 20px; height: 20px; top: 30%; right: 10%; animation-delay: 2s; }
+    .particle:nth-child(3) { width: 10px; height: 10px; bottom: 15%; left: 25%; animation-delay: 4s; }
+    .particle:nth-child(4) { width: 25px; height: 25px; bottom: 5%; right: 20%; animation-delay: 6s; }
+
+    /* Hover Effects */
+    .row div:hover i {
+        transform: scale(1.2);
+        transition: transform 0.3s ease;
+    }
+
+    /* Spinning Icons */
+    .decorative-icon {
+        animation: rotateIcon 15s linear infinite;
+    }
+
+    @keyframes rotateIcon {
+        from {
+            transform: rotate(0deg);
+        }
+        to {
+            transform: rotate(360deg);
+        }
+    }
+
+    /* Highlight Text Animation */
+    .highlight-text {
+        position: relative;
+        background: linear-gradient(90deg, #ffcf33, #ff9f1a, #ffcf33);
+        background-size: 200% auto;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: shineText 3s linear infinite;
+    }
+
+    @keyframes shineText {
+        to {
+            background-position: -200% center;
+        }
+    }
+</style>
+
 <section id="about" class="py-5 bg-light">
     <div class="container text-center">
         <style>
@@ -347,32 +413,35 @@
                 padding: 50px 20px;
                 position: relative;
                 border-radius: 10px;
-                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
                 overflow: hidden;
+                z-index: 1;
             }
-        
+
             .motto-container h2 {
-                font-size: 2.5rem;
+                font-size: 3rem;
                 font-weight: bold;
                 text-transform: uppercase;
                 margin-bottom: 20px;
-                text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+                text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+                letter-spacing: 2px;
             }
-        
+
             .motto-container p {
                 font-size: 1.5rem;
                 line-height: 1.8;
-                margin-bottom: 20px;
+                margin-bottom: 30px;
+                text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
             }
-        
+
             .decorative-line {
-                width: 100px;
+                width: 120px;
                 height: 5px;
                 background: white;
-                margin: 10px auto;
+                margin: 20px auto;
                 border-radius: 5px;
             }
-        
+
             .sparkle {
                 position: absolute;
                 width: 20px;
@@ -382,31 +451,31 @@
                 border-radius: 50%;
                 animation: sparkleAnimation 5s infinite ease-in-out;
             }
-        
+
             .sparkle:nth-child(1) {
-                top: 10%;
-                left: 20%;
+                top: 5%;
+                left: 15%;
                 animation-delay: 0s;
             }
-        
+
             .sparkle:nth-child(2) {
-                top: 20%;
-                right: 15%;
+                top: 15%;
+                right: 10%;
                 animation-delay: 1s;
             }
-        
+
             .sparkle:nth-child(3) {
-                bottom: 25%;
-                left: 30%;
+                bottom: 20%;
+                left: 25%;
                 animation-delay: 2s;
             }
-        
+
             .sparkle:nth-child(4) {
                 bottom: 10%;
                 right: 20%;
                 animation-delay: 3s;
             }
-        
+
             @keyframes sparkleAnimation {
                 0%, 100% {
                     transform: scale(0.5);
@@ -417,22 +486,90 @@
                     opacity: 1;
                 }
             }
+
+            .decorative-icon {
+                position: absolute;
+                font-size: 8rem;
+                color: rgba(255, 255, 255, 0.1);
+                z-index: 0;
+            }
+
+            .decorative-icon.icon-left {
+                top: 10%;
+                left: 10%;
+            }
+
+            .decorative-icon.icon-right {
+                bottom: 10%;
+                right: 10%;
+            }
+
+            .animated-bg {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: radial-gradient(circle, rgba(255, 255, 255, 0.3), transparent 70%);
+                animation: pulse 6s infinite;
+                z-index: -1;
+                border-radius: 10px;
+            }
+
+            @keyframes pulse {
+                0%, 100% {
+                    opacity: 0.3;
+                }
+                50% {
+                    opacity: 0.6;
+                }
+            }
         </style>
-        
+
         <div class="motto-container text-center">
+            <!-- Animated Background -->
+            <div class="animated-bg"></div>
+
             <!-- Sparkle Effects -->
             <div class="sparkle"></div>
             <div class="sparkle"></div>
             <div class="sparkle"></div>
             <div class="sparkle"></div>
-            
+
+            <!-- Decorative Icons -->
+            <i class="fas fa-star decorative-icon icon-left"></i>
+            <i class="fas fa-cogs decorative-icon icon-right"></i>
+
             <!-- Motto Content -->
             <h2 class="animate__animated animate__fadeInDown">MOTTO PRODUK KAMI</h2>
             <div class="decorative-line animate__animated animate__zoomIn"></div>
             <p class="animate__animated animate__fadeInUp animate__delay-1s">
                 Hadirkan Kebersihan, Hemat Air, dan Kesehatan dalam Genggaman Teknologi
             </p>
+
+            <!-- Additional Features -->
+            <div class="row mt-4">
+                <div class="col-md-4 animate__animated animate__fadeInLeft">
+                    <i class="fas fa-hands-wash fa-3x text-light mb-2"></i>
+                    <h5>Kebersihan Optimal</h5>
+                    <p class="text-white">Menggunakan teknologi modern untuk kebersihan maksimal.</p>
+                </div>
+                <div class="col-md-4 animate__animated animate__fadeInUp">
+                    <i class="fas fa-tint fa-3x text-light mb-2"></i>
+                    <h5>Hemat Air</h5>
+                    <p class="text-white">Teknologi hemat air hingga 80%.</p>
+                </div>
+                <div class="col-md-4 animate__animated animate__fadeInRight">
+                    <i class="fas fa-heartbeat fa-3x text-light mb-2"></i>
+                    <h5>Pemantauan Kesehatan</h5>
+                    <p class="text-white">Analisis biomarker untuk kesehatan real-time.</p>
+                </div>
+            </div>
         </div>
+    </div>
+</section>
+
+
         <style>
             .feature-section {
                 background: linear-gradient(135deg, #e0f7fa, #b2ebf2);
