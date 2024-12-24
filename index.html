@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanivox: Inovasi Toilet Pintar</title>
+    <link href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link href="assets/sanivox_styles.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+        }
+        header {
+            background: #0056b3;
+            color: white;
+        }
+        header .navbar-brand {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        header .navbar-nav .nav-link {
+            color: white;
+            font-weight: 500;
+        }
+        .custom-banner {
+            background: url('assets/logo pc.png') no-repeat center;
+            background-size: cover;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        .custom-banner-content {
+            text-align: center;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .custom-banner-content h2 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        .custom-banner-content p {
+            font-size: 1rem;
+        }
+        section {
+            padding: 50px 20px;
+        }
+        footer {
+            background: #343a40;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+        }
+        footer a {
+            color: white;
+            text-decoration: none;
+        }
+        .table-wrapper {
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #003f7f;">
+            <div class="container">
+                <a class="navbar-brand animate__animated animate__fadeInLeft" href="#">Sanivox</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a href="#about" class="nav-link animate__animated animate__fadeInDown animate__delay-1s">Tentang</a></li>
+                        <li class="nav-item"><a href="#team" class="nav-link animate__animated animate__fadeInDown animate__delay-1.5s">Anggota Tim</a></li>
+                        <li class="nav-item"><a href="#iframe" class="nav-link animate__animated animate__fadeInDown animate__delay-2s">Proposal</a></li>
+                        <li class="nav-item"><a href="#poster" class="nav-link animate__animated animate__fadeInDown animate__delay-2.5s">Poster</a></li>
+                        <li class="nav-item"><a href="#survey" class="nav-link animate__animated animate__fadeInDown animate__delay-3s">Survey</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <!-- Banner -->
+    <div class="banner">
+        <div class="banner-logo-container">
+            <img src="assets/logo pc.png" alt="Logo 1" class="banner-logo animate__animated animate__zoomIn animate__delay-1s">
+            <img src="assets/LogoItera.png" alt="Logo 2" class="banner-logo animate__animated animate__zoomIn animate__delay-1.5s">
+            <img src="assets/logoIF.png" alt="Logo 3" class="banner-logo animate__animated animate__zoomIn animate__delay-2s">
+        </div>
+        <div class="banner-content">
+            <h2 class="add-top-margin-small animate__animated animate__fadeInUp">Sanivox: Toilet Pintar untuk Sanitasi Modern</h2>
+            <p class="text black-text animate__animated animate__fadeInUp animate__delay-1s">
+                Menggabungkan teknologi IoT, sensor otomatis, dan analisis biomarker, Sanivox memberikan solusi sanitasi tanpa sentuhan yang higienis, efisien, dan berkelanjutan. Dirancang untuk memenuhi kebutuhan ruang publik dan pribadi, Sanivox meningkatkan kebersihan sekaligus mendukung pemantauan kesehatan real-time.
+            </p>
+        </div>
+    </div>
+  
+
+   <!--End Header-->
+   <section id="table-of-content" class="py-5 bg-light">
+    <div class="container text-center">
+        <h3 class="mb-4 animate__animated animate__fadeInDown">Table of Content</h3>
+        <div class="row justify-content-center">
+            <div class="col-md-4">
+                <ul class="list-group animate__animated animate__fadeInLeft">
+                    <li class="list-group-item">
+                        <a href="#about">
+                            <i class="fas fa-info-circle text-primary"></i> Tentang Sanivox
+                        </a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="#team">
+                            <i class="fas fa-users text-success"></i> Anggota Kelompok
+                        </a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="#Latarbelakang">
+                            <i class="fas fa-book text-warning"></i> Latar Belakang Produk
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <ul class="list-group animate__animated animate__fadeInRight">
+                    <li class="list-group-item">
+                        <a href="#Tujuan">
+                            <i class="fas fa-bullseye text-danger"></i> Tujuan Produk
+                        </a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="#Fungsi">
+                            <i class="fas fa-cogs text-secondary"></i> Fungsi Produk
+                        </a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="#Logo">
+                            <i class="fas fa-shapes text-primary"></i> Logo Produk
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <ul class="list-group animate__animated animate__fadeInUp">
+                    <li class="list-group-item">
+                        <a href="#produk-dan-rendering">
+                            <i class="fas fa-camera text-info"></i> Foto dan Video Rendering Produk
+                        </a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="#iframe">
+                            <i class="fas fa-file-pdf text-danger"></i> Iframe Proposal Produk
+                        </a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="#survey">
+                            <i class="fas fa-poll text-success"></i> Survey
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section id="about" class="py-5 bg-light">
+    <div class="container text-center">
+        <h2 class="mb-4 animate__animated animate__fadeInDown">MOTTO PRODUK KAMI</h2>
+        <p class="animate__animated animate__fadeInUp animate__delay-1s text-center">
+            Hadirkan Kebersihan, Hemat Air, dan Kesehatan dalam Genggaman Teknologi        
+        </p>
+        <div class="row justify-content-center align-items-center mt-5">
+            <div class="col-md-6 animate__animated animate__zoomIn">
+                <img src="assets/poster/logo.jpg" alt="Mockup Sanivox" class="img-fluid rounded shadow" style="max-width: 100%; height: auto;">
+            </div>
+            <div class="col-md-6 text-start animate__animated animate__fadeInRight">
+                <p class="text-justify">
+                    Sanivox adalah inovasi di bidang sanitasi modern yang dirancang untuk memenuhi kebutuhan kebersihan dan kesehatan ruang publik maupun pribadi. Dengan teknologi mutakhir seperti sensor otomatis, flush vakum hemat air, dan analisis biomarker, Sanivox tidak hanya menjaga kebersihan optimal tetapi juga mendukung keberlanjutan lingkungan.
+                </p>
+                <ul class="list-unstyled">
+                    <li><i class="fas fa-check-circle text-success"></i> Bebas sentuhan dengan otomatisasi penuh</li>
+                    <li><i class="fas fa-check-circle text-success"></i> Hemat air hingga 80%</li>
+                    <li><i class="fas fa-check-circle text-success"></i> Analisis biomarker untuk pemantauan kesehatan</li>
+                    <li><i class="fas fa-check-circle text-success"></i> Desain modern dan futuristik</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+    <section id="team" class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Anggota Kelompok</h2>
+            <div class="row justify-content-center">
+                <!-- Member 1 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card shadow border-0">
+                        <img src="assets/nadia1.jpg" class="card-img-top" alt="Foto Nadia Silvani">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Nadia Silvani</h5>
+                            <p class="card-text">NIM: 121450054</p>
+                            <p class="card-text text-muted">Mendesign Poster dan Membuat Rancangan Video Produk</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Member 2 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card shadow border-0">
+                        <img src="assets/gilang.jpg" class="card-img-top" alt="Foto M Gilang Martiansyah M">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">M Gilang Martiansyah M</h5>
+                            <p class="card-text">NIM: 121450056</p>
+                            <p class="card-text text-muted">Membuat Website, Membuat Logo</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Member 3 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card shadow border-0">
+                        <img src="assets/Aulia.jpg" class="card-img-top" alt="Foto Aulia Wardani">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Aulia Wardani</h5>
+                            <p class="card-text">NIM: 121450034</p>
+                            <p class="card-text text-muted">Membuat Proposal Produk dan Membuat Render 3D Produk</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <div class="flex-item flex-column py-5" id="Latarbelakang">
+        <div class="container">
+            <h2 class="text-center mb-4 animate__animated animate__fadeInDown">Latar Belakang</h2>
+            <div class="row align-items-center">
+                <!-- Bagian Teks -->
+                <div class="col-md-6 text-justify animate__animated animate__fadeInLeft">
+                    <p>
+                        <i class="fas fa-hands-wash text-primary"></i>
+                        <strong>Sanitasi yang baik</strong> merupakan fondasi penting dalam menjaga kesehatan masyarakat. Namun, fasilitas sanitasi konvensional sering kali menjadi sumber penyebaran penyakit menular akibat kontak langsung dengan permukaan yang tercemar. Berdasarkan laporan <strong>WHO</strong>, praktik sanitasi yang buruk dapat memicu penyakit seperti diare, kolera, dan infeksi saluran pernapasan.
+                    </p>
+                    <p>
+                        <i class="fas fa-microchip text-success"></i>
+                        Di era modern, <strong>teknologi memberikan solusi baru</strong> untuk masalah ini. Sanivox hadir sebagai toilet pintar berbasis Internet of Things (IoT), menawarkan pengalaman sanitasi yang bebas sentuhan, hemat air, dan dilengkapi dengan teknologi kesehatan terkini. Dengan sistem sensor otomatis, penyemprotan disinfektan, dan flush vakum hemat air, Sanivox tidak hanya mengutamakan kebersihan, tetapi juga efisiensi.
+                    </p>
+                    <p>
+                        <i class="fas fa-leaf text-success"></i>
+                        Selain itu, Sanivox memiliki fitur pemantauan kesehatan seperti analisis biomarker dalam limbah, menjadikannya lebih dari sekadar toilet biasa. Teknologi ini mendukung kebersihan dan kesehatan pengguna di ruang publik maupun pribadi, sekaligus mendorong keberlanjutan lingkungan.
+                    </p>
+                </div>
+    
+                <!-- Bagian Gambar -->
+                <div class="col-md-6 text-center animate__animated animate__fadeInRight">
+                    <img src="assets/poster/3.png" alt="Sanivox Technology" class="img-fluid rounded shadow-lg gambar-latarbelakang">
+                    <p class="mt-3"><em>Teknologi modern Sanivox yang mendukung kebersihan dan keberlanjutan</em></p>
+    </div>
+    <section id="Tujuan" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4 animate__animated animate__fadeInDown">Tujuan Produk</h2>
+            <div id="carouselTujuan" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <!-- Tujuan 1 -->
+                    <div class="carousel-item active text-center">
+                        <i class="fas fa-shield-virus fa-4x text-primary mb-3"></i>
+                        <h5>Mengurangi Risiko Penyebaran</h5>
+                        <p class="text-muted">Menghilangkan kebutuhan kontak langsung pada permukaan seperti gagang pintu dan tombol flush.</p>
+                    </div>
+                    <!-- Tujuan 2 -->
+                    <div class="carousel-item text-center">
+                        <i class="fas fa-tint fa-4x text-info mb-3"></i>
+                        <h5>Hemat Air</h5>
+                        <p class="text-muted">Mengurangi konsumsi air hingga 80% dengan teknologi flush vakum hemat air.</p>
+                    </div>
+                    <!-- Tujuan 3 -->
+                    <div class="carousel-item text-center">
+                        <i class="fas fa-microscope fa-4x text-success mb-3"></i>
+                        <h5>Analisis Biomarker</h5>
+                        <p class="text-muted">Pemantauan kesehatan real-time dengan data penting untuk deteksi dini kondisi kesehatan.</p>
+                    </div>
+                    <!-- Tujuan 4 -->
+                    <div class="carousel-item text-center">
+                        <i class="fas fa-hand-sparkles fa-4x text-warning mb-3"></i>
+                        <h5>Pengalaman Modern</h5>
+                        <p class="text-muted">Menghadirkan kenyamanan dan kebersihan di ruang publik maupun pribadi dengan teknologi IoT.</p>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselTujuan" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselTujuan" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                </button>
+            </div>
+        </div>
+    </section>
+    
+    
+    <section id="Fungsi" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4 animate__animated animate__fadeInDown">Fungsi Produk</h2>
+            <p class="text-center animate__animated animate__fadeInUp animate__delay-1s">
+                Sanivox memiliki fungsi utama sebagai solusi sanitasi modern berbasis teknologi.
+            </p>
+            <div class="row mt-5">
+                <!-- Fungsi 1 -->
+                <div class="col-md-6 col-lg-3 text-center animate__animated animate__zoomIn">
+                    <div class="card border-0 shadow p-4 hover-effect">
+                        <i class="fas fa-spray-can fa-3x text-primary"></i>
+                        <h5 class="mt-3">Kebersihan Optimal</h5>
+                        <p class="text-muted">Menggunakan penyemprotan disinfektan otomatis dan lapisan nano antimikroba untuk kebersihan maksimal.</p>
+                    </div>
+                </div>
+                <!-- Fungsi 2 -->
+                <div class="col-md-6 col-lg-3 text-center animate__animated animate__zoomIn animate__delay-1s">
+                    <div class="card border-0 shadow p-4 hover-effect">
+                        <i class="fas fa-water fa-3x text-info"></i>
+                        <h5 class="mt-3">Efisiensi Penggunaan Sumber Daya</h5>
+                        <p class="text-muted">Teknologi flush vakum yang hemat air hingga 80%, mendukung keberlanjutan lingkungan.</p>
+                    </div>
+                </div>
+                <!-- Fungsi 3 -->
+                <div class="col-md-6 col-lg-3 text-center animate__animated animate__zoomIn animate__delay-2s">
+                    <div class="card border-0 shadow p-4 hover-effect">
+                        <i class="fas fa-heartbeat fa-3x text-success"></i>
+                        <h5 class="mt-3">Pemantauan Kesehatan</h5>
+                        <p class="text-muted">Analisis biomarker dalam limbah untuk mendeteksi kondisi kesehatan secara real-time.</p>
+                    </div>
+                </div>
+                <!-- Fungsi 4 -->
+                <div class="col-md-6 col-lg-3 text-center animate__animated animate__zoomIn animate__delay-3s">
+                    <div class="card border-0 shadow p-4 hover-effect">
+                        <i class="fas fa-hands fa-3x text-warning"></i>
+                        <h5 class="mt-3">Pengalaman Bebas Sentuhan</h5>
+                        <p class="text-muted">Teknologi berbasis IoT untuk otomatisasi tanpa sentuhan di berbagai fitur seperti pintu dan flush.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>    
+    <section id="Logo" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4 animate__animated animate__fadeInDown">Logo Produk</h2>
+            <div class="row justify-content-center align-items-center">
+                <!-- Logo Produk -->
+                <div class="col-md-4 text-center animate__animated animate__zoomIn">
+                    <img src="assets/poster/logo.jpg" alt="Logo Sanivox" class="img-fluid rounded-circle shadow" style="max-width: 250px; height: auto;">
+                </div>
+                <!-- Penjelasan Makna Logo -->
+                <div class="col-md-8 animate__animated animate__fadeInRight">
+                    <p class="text-center">
+                        Logo Sanivox dirancang untuk mencerminkan inovasi, kebersihan, dan teknologi modern. 
+                        Berikut adalah makna dari elemen-elemen dalam logo:
+                    </p>
+                    <div class="row">
+                        <!-- Elemen 1 -->
+                        <div class="col-md-6 text-start d-flex align-items-start animate__animated animate__fadeInUp animate__delay-1s">
+                            <i class="fas fa-circle text-primary fa-2x me-3"></i>
+                            <div>
+                                <h6 class="fw-bold">Lingkaran Biru</h6>
+                                <p class="text-muted mb-0">Kontinuitas, kebersihan, dan keberlanjutan.</p>
+                            </div>
+                        </div>
+                        <!-- Elemen 2 -->
+                        <div class="col-md-6 text-start d-flex align-items-start animate__animated animate__fadeInUp animate__delay-2s">
+                            <i class="fas fa-toilet fa-2x text-success me-3"></i>
+                            <div>
+                                <h6 class="fw-bold">Simbol Toilet Modern</h6>
+                                <p class="text-muted mb-0">Menunjukkan fokus pada inovasi sanitasi canggih.</p>
+                            </div>
+                        </div>
+                        <!-- Elemen 3 -->
+                        <div class="col-md-6 text-start d-flex align-items-start animate__animated animate__fadeInUp animate__delay-3s">
+                            <i class="fas fa-network-wired fa-2x text-warning me-3"></i>
+                            <div>
+                                <h6 class="fw-bold">Elemen Teknologi IoT</h6>
+                                <p class="text-muted mb-0">Mengilustrasikan konektivitas IoT dalam produk.</p>
+                            </div>
+                        </div>
+                        <!-- Elemen 4 -->
+                        <div class="col-md-6 text-start d-flex align-items-start animate__animated animate__fadeInUp animate__delay-4s">
+                            <i class="fas fa-palette fa-2x text-info me-3"></i>
+                            <div>
+                                <h6 class="fw-bold">Warna</h6>
+                                <p class="text-muted mb-0">Biru melambangkan air dan kebersihan. 
+                                    Warna Putih merepresentasikan higienitas.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>    
+            <!-------------------------------------------------------------------------------------------->
+            <!-- Start Foto dan Video Rendering Produk -->
+
+
+
+            <section id="produk-dan-rendering" class="py-5">
+                <div class="container">
+                    <h2 class="text-center mb-4 animate__animated animate__fadeInDown">Foto dan Video Rendering Produk</h2>
+                    <p class="text-center animate__animated animate__fadeInUp animate__delay-1s">
+                        Produk Sanivox dirancang untuk menjawab tantangan sanitasi modern. Dengan desain yang futuristik dan teknologi berbasis IoT, berikut adalah tampilan dan simulasi fitur produk melalui foto hasil pengembangan dan video rendering 3D.
+                    </p>
+                    <div class="row mt-5">
+                        <!-- Foto Produk -->
+                        <div class="col-md-6 text-center animate__animated animate__zoomIn">
+                            <div class="card shadow border-0" style="overflow: hidden;">
+                                <img src="assets/GambarProduk.jpg" alt="Foto Produk Sanivox" class="img-fluid">
+                                <div class="card-body">
+                                    <h5 class="card-title"><i class="fas fa-camera-retro text-primary me-2"></i>Foto Produk</h5>
+                                    <p class="card-text text-muted">Desain modern dan futuristik dengan sistem bebas sentuhan serta fitur efisien seperti flush vakum hemat air.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Video Rendering -->
+                        <div class="col-md-6 text-center animate__animated animate__zoomIn animate__delay-1s">
+                            <div class="card shadow border-0" style="overflow: hidden;">
+                                <video controls class="img-fluid">
+                                    <source src="assets/product-video.mp4" type="video/mp4">
+                                    Browser Anda tidak mendukung video ini.
+                                </video>
+                                <div class="card-body">
+                                    <h5 class="card-title"><i class="fas fa-video text-success me-2"></i>Video Rendering</h5>
+                                    <p class="card-text text-muted">Simulasi fitur utama seperti penyemprotan disinfektan otomatis, flush vakum, dan integrasi IoT.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Use Case Interaktif -->
+<div class="row mt-5 text-center">
+    <!-- Use Case 1 -->
+    <div class="col-md-4 animate__animated animate__fadeInLeft">
+        <div class="use-case-card shadow-lg p-4">
+            <i class="fas fa-hospital fa-3x text-primary mb-3"></i>
+            <h6 class="mt-3">Fasilitas Kesehatan</h6>
+            <p class="text-muted">Sanivox digunakan di rumah sakit untuk menjaga standar kebersihan maksimal tanpa sentuhan.</p>
+            <a href="#healthcare"></a>
+        </div>
+    </div>
+    <!-- Use Case 2 -->
+    <div class="col-md-4 animate__animated animate__zoomIn">
+        <div class="use-case-card shadow-lg p-4">
+            <i class="fas fa-school fa-3x text-success mb-3"></i>
+            <h6 class="mt-3">Sekolah dan Kampus</h6>
+            <p class="text-muted">Memberikan pengalaman sanitasi modern bagi pelajar untuk meningkatkan kebersihan.</p>
+            <a href="#education"></a>
+        </div>
+    </div>
+    <!-- Use Case 3 -->
+    <div class="col-md-4 animate__animated animate__fadeInRight">
+        <div class="use-case-card shadow-lg p-4">
+            <i class="fas fa-building fa-3x text-danger mb-3"></i>
+            <h6 class="mt-3">Perkantoran Modern</h6>
+            <p class="text-muted">Sanivox mendukung produktivitas dengan kebersihan otomatis di ruang kerja.</p>
+            <a href="#offices"></a>
+        </div>
+    </div>
+</div>
+            </section>            
+<!-- Penjelasan Rinci -->
+<div class="row mt-5">
+    <div class="col-md-12 text-center">
+        <h3 id="Spesifikasi" class="animate__animated animate__fadeInUp">Spesifikasi Utama</h3>
+        <p class="text-muted animate__animated animate__fadeInUp animate__delay-1s">
+            Sanivox dirancang dengan teknologi modern dan bahan berkualitas tinggi untuk memenuhi kebutuhan sanitasi yang efisien dan higienis.
+        </p>
+    </div>
+</div>
+<div class="row mt-4">
+    <!-- Spesifikasi 1 -->
+    <div class="col-md-6 animate__animated animate__fadeInLeft">
+        <div class="spec-card shadow-sm p-4 mb-4 d-flex align-items-start">
+            <i class="fas fa-box fa-3x text-primary me-3"></i>
+            <div>
+                <h6 class="text-dark">Material Premium</h6>
+                <p class="text-muted">
+                    Dibuat dari keramik premium dengan lapisan nano antimikroba untuk memastikan kebersihan dan daya tahan jangka panjang.
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- Spesifikasi 2 -->
+    <div class="col-md-6 animate__animated animate__fadeInRight">
+        <div class="spec-card shadow-sm p-4 mb-4 d-flex align-items-start">
+            <i class="fas fa-ruler-combined fa-3x text-info me-3"></i>
+            <div>
+                <h6 class="text-dark">Dimensi Ideal</h6>
+                <p class="text-muted">
+                    Berukuran 65 cm x 70 cm x 50 cm, dirancang untuk kenyamanan pengguna tanpa mengurangi efisiensi ruang.
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- Spesifikasi 3 -->
+    <div class="col-md-6 animate__animated animate__fadeInLeft animate__delay-1s">
+        <div class="spec-card shadow-sm p-4 mb-4 d-flex align-items-start">
+            <i class="fas fa-tint fa-3x text-primary me-3"></i>
+            <div>
+                <h6 class="text-dark">Kapasitas Air Hemat</h6>
+                <p class="text-muted">
+                    Kapasitas air 5 liter dengan teknologi flush vakum yang hemat hingga 80% dibandingkan toilet konvensional.
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- Spesifikasi 4 -->
+    <div class="col-md-6 animate__animated animate__fadeInRight animate__delay-1s">
+        <div class="spec-card shadow-sm p-4 mb-4 d-flex align-items-start">
+            <i class="fas fa-wifi fa-3x text-danger me-3"></i>
+            <div>
+                <h6 class="text-dark">Integrasi IoT</h6>
+                <p class="text-muted">
+                    Sistem berbasis IoT untuk pemantauan dan kontrol real-time melalui aplikasi mobile, memastikan efisiensi dan kenyamanan pengguna.
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- Spesifikasi 5 -->
+    <div class="col-md-6 animate__animated animate__fadeInLeft animate__delay-2s">
+        <div class="spec-card shadow-sm p-4 mb-4 d-flex align-items-start">
+            <i class="fas fa-tools fa-3x text-success me-3"></i>
+            <div>
+                <h6 class="text-dark">Perawatan Mudah</h6>
+                <p class="text-muted">
+                    Dirancang untuk perawatan yang mudah dengan akses komponen yang efisien dan panduan perawatan otomatis.
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- Spesifikasi 6 -->
+    <div class="col-md-6 animate__animated animate__fadeInRight animate__delay-2s">
+        <div class="spec-card shadow-sm p-4 mb-4 d-flex align-items-start">
+            <i class="fas fa-solar-panel fa-3x text-warning me-3"></i>
+            <div>
+                <h6 class="text-dark">Energi Ramah Lingkungan</h6>
+                <p class="text-muted">
+                    Mendukung opsi energi terbarukan dengan panel surya opsional untuk efisiensi energi maksimal.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- End Foto dan Video Rendering Produk -->
+           <!-- Start Text with Iframe -->
+<section class="proposal-section py-5">
+    <div class="container">
+        <div class="text-center mb-4">
+            <h2 id="iframe" class="animate__animated animate__fadeInDown">Proposal Produk Sanivox</h2>
+            <hr class="mx-auto" style="width: 50px; height: 3px; background-color: #0056b3; border: none;">
+        </div>
+        <div class="proposal-content p-4 shadow-lg rounded bg-light">
+            <p class="text text-center">
+                Proposal ini berisi informasi lengkap mengenai produk Sanivox, termasuk latar belakang, tujuan, keunggulan, spesifikasi, dan rancangan arsitektur sistem. Dokumen ini dapat diakses langsung melalui tampilan di bawah.
+            </p>
+            <div class="iframe-wrapper border border-primary rounded shadow mb-4">
+                <iframe class="iframe-in-body" src="assets/documents/Final_Project_PC.pdf" style="width: 100%; height: 600px; border: none; border-radius: 5px;"></iframe>
+            </div>
+            <p class="text text-center">
+                Dengan menampilkan proposal ini, diharapkan pengguna dapat memahami detail konsep dan manfaat produk Sanivox secara mendalam. Untuk informasi lebih lanjut, silakan unduh proposal lengkap melalui tautan berikut.
+            </p>
+            <div class="text-center mt-3">
+                <a href="assets/documents/Final_Project_PC.pdf" target="_blank" class="btn btn-primary btn-lg shadow-sm">
+                    <i class="fas fa-download me-2"></i>Unduh Proposal Lengkap
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Text with Iframe -->
+<section id="poster" class="bg-light py-5">
+    <div class="container">
+        <div class="text-center mb-4">
+            <h2 class="animate__animated animate__fadeInDown">
+                <i class="fas fa-image text-primary me-2"></i>Poster Produk Sanivox
+            </h2>
+            <hr class="mx-auto" style="width: 50px; height: 3px; background-color: #0056b3; border: none;">
+        </div>
+        <p class="text-center text-muted animate__animated animate__fadeInUp animate__delay-1s">
+            Poster ini menjelaskan keunggulan dan fitur utama dari produk Sanivox secara visual. Anda dapat melihat lebih detail atau mengunduhnya di bawah ini.
+        </p>
+        <div class="text-center mt-4 animate__animated animate__zoomIn">
+            <div class="poster-frame shadow-lg position-relative" style="display: inline-block; border-radius: 15px; overflow: hidden;">
+                <!-- Poster Image -->
+                <img src="assets/poster/1.png" alt="Poster Sanivox" class="img-fluid poster-image" style="border: 3px solid #0056b3; cursor: pointer;">
+                <div class="poster-overlay position-absolute top-0 w-100 h-100 d-flex justify-content-center align-items-center" 
+                    style="background: rgba(0, 0, 0, 0.7); color: white; opacity: 0; transition: opacity 0.5s ease-in-out;">
+                    <a href="assets/poster/1.png" target="_blank" class="btn btn-primary btn-lg shadow">
+                        <i class="fas fa-search-plus me-2"></i>Lihat Lebih Dekat
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- Download Button -->
+        <div class="text-center mt-4 animate__animated animate__fadeInUp">
+            <a href="assets/poster/1.png" download class="btn btn-success btn-lg">
+                <i class="fas fa-download me-2"></i>Unduh Poster
+            </a>
+        </div>
+    </div>
+</section>
+
+<section id="survey" class="py-5 bg-light">
+    <div class="container">
+        <div class="text-center mb-4">
+            <h2 class="animate__animated animate__fadeInDown">
+                <i class="fas fa-poll text-primary"></i> Survey Produk Sanivox
+            </h2>
+            <hr class="mx-auto" style="width: 60px; height: 3px; background-color: #0056b3; border: none;">
+            <p class="text-muted">Partisipasi Anda membantu kami meningkatkan produk untuk masa depan yang lebih baik.</p>
+        </div>
+        
+        <div class="row g-4">
+            <!-- Pertanyaan 1 -->
+            <div class="col-md-6">
+                <div class="card border-primary shadow-sm animate__animated animate__fadeInLeft">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <i class="fas fa-thumbs-up text-primary"></i> Desain Produk
+                        </h5>
+                        <p class="card-text">Apakah Anda merasa desain Sanivox terlihat modern dan sesuai dengan kebutuhan Anda?</p>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="design-feedback" id="design-strongly-agree">
+                            <label class="form-check-label" for="design-strongly-agree">Sangat Setuju</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="design-feedback" id="design-agree">
+                            <label class="form-check-label" for="design-agree">Setuju</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="design-feedback" id="design-neutral">
+                            <label class="form-check-label" for="design-neutral">Netral</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="design-feedback" id="design-disagree">
+                            <label class="form-check-label" for="design-disagree">Tidak Setuju</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pertanyaan 2 -->
+            <div class="col-md-6">
+                <div class="card border-info shadow-sm animate__animated animate__fadeInRight">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <i class="fas fa-tint text-info"></i> Fitur Hemat Air
+                        </h5>
+                        <p class="card-text">Seberapa penting menurut Anda fitur hemat air (flush vakum) dalam produk ini?</p>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="water-saving-feedback" id="water-very-important">
+                            <label class="form-check-label" for="water-very-important">Sangat Penting</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="water-saving-feedback" id="water-important">
+                            <label class="form-check-label" for="water-important">Penting</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="water-saving-feedback" id="water-neutral">
+                            <label class="form-check-label" for="water-neutral">Netral</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="water-saving-feedback" id="water-not-important">
+                            <label class="form-check-label" for="water-not-important">Tidak Penting</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pertanyaan 3 dan 4 -->
+        <div class="row g-4 mt-3">
+            <!-- Pertanyaan 3 -->
+            <div class="col-md-6">
+                <div class="card border-success shadow-sm animate__animated animate__fadeInLeft">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <i class="fas fa-hand-sparkles text-success"></i> Kenyamanan Fitur Bebas Sentuhan
+                        </h5>
+                        <p class="card-text">Apakah fitur bebas sentuhan (sensor otomatis) membantu meningkatkan kenyamanan Anda?</p>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="touchless-feedback" id="touchless-strongly-agree">
+                            <label class="form-check-label" for="touchless-strongly-agree">Sangat Setuju</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="touchless-feedback" id="touchless-agree">
+                            <label class="form-check-label" for="touchless-agree">Setuju</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="touchless-feedback" id="touchless-neutral">
+                            <label class="form-check-label" for="touchless-neutral">Netral</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="touchless-feedback" id="touchless-disagree">
+                            <label class="form-check-label" for="touchless-disagree">Tidak Setuju</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pertanyaan 4 -->
+            <div class="col-md-6">
+                <div class="card border-warning shadow-sm animate__animated animate__fadeInRight">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <i class="fas fa-microchip text-warning"></i> Teknologi IoT
+                        </h5>
+                        <p class="card-text">Seberapa puas Anda dengan ide penggunaan teknologi IoT untuk memantau dan mengontrol produk ini?</p>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="iot-feedback" id="iot-very-satisfied">
+                            <label class="form-check-label" for="iot-very-satisfied">Sangat Puas</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="iot-feedback" id="iot-satisfied">
+                            <label class="form-check-label" for="iot-satisfied">Puas</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="iot-feedback" id="iot-neutral">
+                            <label class="form-check-label" for="iot-neutral">Netral</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="iot-feedback" id="iot-dissatisfied">
+                            <label class="form-check-label" for="iot-dissatisfied">Tidak Puas</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Saran -->
+        <div class="row mt-4">
+            <div class="col">
+                <div class="card border-info shadow-sm animate__animated animate__fadeInUp">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <i class="fas fa-comment-dots text-info"></i> Saran & Masukan
+                        </h5>
+                        <textarea class="form-control" rows="4" placeholder="Tuliskan saran atau komentar Anda di sini"></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Submit Button -->
+        <div class="text-center mt-4 animate__animated animate__zoomIn">
+            <button class="btn btn-primary btn-lg">
+                <i class="fas fa-paper-plane me-2"></i>Kirim Jawaban
+            </button>
+        </div>
+    </div>
+</section>
+    
+
+<footer class="bg-dark text-light py-5">
+    <div class="container">
+        <div class="row justify-content-between">
+            <!-- Tentang -->
+            <div class="col-md-4 mb-3">
+                <h5 class="text-uppercase fw-bold">Tentang Sanivox</h5>
+                <p>
+                    Sanivox adalah solusi inovatif yang menghadirkan kebersihan, efisiensi, dan teknologi IoT untuk sanitasi modern.
+                </p>
+            </div>
+
+            <!-- Tautan Cepat -->
+            <div class="col-md-3 mb-3">
+                <h5 class="text-uppercase fw-bold">Tautan Cepat</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#about" class="text-light text-decoration-none">Tentang</a></li>
+                    <li><a href="#team" class="text-light text-decoration-none">Anggota Tim</a></li>
+                    <li><a href="#iframe" class="text-light text-decoration-none">Proposal</a></li>
+                    <li><a href="#poster" class="text-light text-decoration-none">Poster</a></li>
+                    <li><a href="#survey" class="text-light text-decoration-none">Survey</a></li>
+                </ul>
+            </div>
+
+            <!-- Hubungi Kami -->
+            <div class="col-md-4 mb-3">
+                <h5 class="text-uppercase fw-bold">Hubungi Kami</h5>
+                <p>Email: <a href="mailto:mgilang.121450056@student.itera.ac.id" class="text-light text-decoration-none">mgilang.121450056@student.itera.ac.id</a></p>
+                <p>Telepon: <a href="tel:+6285157725574" class="text-light text-decoration-none">+62 851-5772-5574</a></p>
+                <p>Alamat: Jalan Raden Saleh, Airan, Lampung Selatan</p>
+            </div>
+        </div>
+
+        <!-- Bottom Section -->
+        <div class="row mt-4">
+            <div class="col text-center">
+                <p>&copy; 2024 Tim Sanivox. All Rights Reserved.</p>
+                <a href="#" class="btn btn-outline-light btn-sm">Back to Top</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</html>
