@@ -1,6 +1,6 @@
 # 🌟 **Sanivox: Inovasi Toilet Pintar untuk Masa Depan** 🌟
 
-![Sanivox Banner](assets/banner-image.png)
+![Sanivox Banner](assets/bannercoba.jpeg)
 
 Selamat datang di **Sanivox**, sebuah proyek inovatif yang menggabungkan **teknologi IoT**, **efisiensi hemat air**, dan **pemantauan kesehatan real-time** untuk menciptakan pengalaman sanitasi modern. 🚽✨
 
